@@ -43,10 +43,12 @@ export default function App() {
       }
     );
 
-    userInfoResponse.json().then((data) => {
-      setUserInfo(data);
-      console.log(userInfo);
-    });
+    userInfoResponse
+      .json()
+      .then((data) => {
+        setUserInfo(data);
+      })
+      .then(() => console.log(userInfo));
   }
 
   function showUserInfo() {
@@ -82,16 +84,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
   userInfo: {
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   profilePic: {
     width: 50,
-    height: 50
-  }
+    height: 50,
+  },
 });
