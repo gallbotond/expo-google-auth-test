@@ -20,9 +20,9 @@ export default function App() {
 
   const [request, response, promptAsync] = Google.useAuthRequest({
     expoClientId:
-      "545921701989-jc1rd9hhf0uc8edka68cecc49jeueuct.apps.googleusercontent.com",
+      "385827417711-cqpvdg3ji7stjaff18is9c7hrcd77mau.apps.googleusercontent.com",
     androidClientId:
-      "545921701989-4cfaj24mro25vv0aenus6dqd6rbv06an.apps.googleusercontent.com",
+      "385827417711-tnb6kmiahucjdb7bc6tgk2svhtbomepf.apps.googleusercontent.com",
   });
 
   React.useEffect(() => {
